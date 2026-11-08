@@ -4,250 +4,378 @@
   <!-- Core document metadata and responsive viewport settings. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0f17">
-  <meta name="description" content="Chethan Gowda builds modern, responsive websites for businesses, cafés, gyms, and professionals.">
-  <meta property="og:title" content="Chethan Gowda — Website Developer">
-  <meta property="og:description" content="Modern websites for growing businesses.">
-  <meta property="og:type" content="website">
-  <title>Chethan Gowda — Website Developer</title>
+  <meta name="theme-color" content="#01133D">
+  <title>WEBBROS | Digital Solutions — Web Development &amp; Software</title>
+  <meta name="description" content="WEBBROS delivers web development, custom software solutions, digital transformation and video editing services for businesses.">
 
-  <!-- Load fonts early to keep typography consistent across the portfolio. -->
+  <!-- Open Graph. og:url and the canonical link are intentionally omitted until the production domain is confirmed. -->
+  <meta property="og:title" content="WEBBROS | Digital Solutions — Web Development &amp; Software">
+  <meta property="og:description" content="Web development, custom software solutions, digital transformation and video editing for businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WEBBROS — Digital Solutions">
+
+  <!-- Favicons generated from the WEBBROS logo lettering. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Marks the page as script-enabled so reveal animations never hide content when JavaScript is unavailable. -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Fonts: Manrope for headings, DM Sans for body text (system fallbacks are defined in style.css). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Reading progress indicator; updated by script.js as the page scrolls. -->
   <div class="scroll-progress" aria-hidden="true"></div>
 
-  <!-- Sticky header with accessible mobile navigation. -->
+  <!-- Sticky, translucent header with accessible mobile navigation. -->
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Chethan Gowda home">
-        <span class="brand-mark">C</span>
-        <span>chethan<span class="brand-muted">.dev</span></span>
+      <a class="brand" href="#home" aria-label="WEBBROS Digital Solutions — home">
+        <img class="brand-logo" src="assets/webbros-logo-nav.png" width="640" height="189" alt="">
+        <span class="brand-text"><b>WEBBROS</b><small>DIGITAL SOLUTIONS</small></span>
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
         <span></span><span></span>
       </button>
       <div class="nav-links" id="nav-links">
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#process">Our Process</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-contact" href="#contact">Let’s Talk <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero: communicates the developer's focus and provides the main actions. -->
-    <section class="hero dark-section" id="home">
+  <main id="main">
+    <!-- Hero: brand statement, primary actions and a custom CSS illustration. -->
+    <section class="hero" id="home">
       <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span> WEBSITE DEVELOPER · MYSURU, INDIA</div>
-          <h1>Thoughtful websites<br>for <span class="accent-text">growing businesses.</span></h1>
-          <p class="hero-lede">I build clean, responsive websites that help businesses show up professionally online and make it easier for customers to connect.</p>
+        <div class="hero-copy">
+          <p class="hero-brand"><span class="hero-brand-line" aria-hidden="true"></span>WEBBROS — DIGITAL SOLUTIONS</p>
+          <h1>Turning Ideas Into <span class="accent-text">Digital Solutions.</span></h1>
+          <p class="hero-lede">We design, develop and deliver digital solutions that help businesses build, grow and succeed in an increasingly digital world.</p>
           <div class="hero-actions">
-            <a class="button button-accent" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="text-link light-link" href="#contact">Let’s discuss your website <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#services">Explore Our Services <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="#contact">Start Your Project <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-note"><span class="note-line"></span> From first idea to launch</div>
         </div>
 
-        <!-- Decorative interface illustration; it does not imitate a specific client site. -->
-        <div class="hero-art reveal" aria-label="Abstract website interface illustration">
-          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-          <div class="art-window">
-            <div class="window-bar">
-              <div class="window-dots"><i></i><i></i><i></i></div>
-              <span>your-business.com</span><span class="window-lock">↗</span>
-            </div>
-            <div class="window-content">
-              <div class="mock-nav"><b>BRAND<span>.</span></b><div><i></i><i></i><i></i></div></div>
-              <div class="mock-layout">
-                <div class="mock-copy"><div class="mock-kicker"></div><div class="mock-title"></div><div class="mock-title short"></div><div class="mock-paragraph"></div><div class="mock-paragraph narrow"></div><div class="mock-cta"></div></div>
-                <div class="mock-image"><div class="mock-image-shape"></div><div class="mock-image-card"></div></div>
-              </div>
-              <div class="mock-bottom"><span></span><span></span><span></span></div>
+        <!-- Decorative illustration: browser + code, dashboard and video timeline. Purely illustrative; it shows no client data or metrics. -->
+        <div class="hero-art" role="img" aria-label="Illustration of a code editor, a dashboard and a video editing timeline">
+          <div class="art-glow" aria-hidden="true"></div>
+          <div class="art-card code-window" aria-hidden="true">
+            <div class="art-bar"><span class="art-dots"><i></i><i></i><i></i></span><span class="art-tab">index.html</span></div>
+            <div class="code-body">
+              <p style="--i:0"><span class="c-tag">&lt;header</span> <span class="c-attr">class</span>=<span class="c-str">"site"</span><span class="c-tag">&gt;</span></p>
+              <p style="--i:1" class="in1"><span class="c-tag">&lt;h1&gt;</span>Your business, online.<span class="c-tag">&lt;/h1&gt;</span></p>
+              <p style="--i:2" class="in1"><span class="c-tag">&lt;a</span> <span class="c-attr">class</span>=<span class="c-str">"cta"</span><span class="c-tag">&gt;</span>Get started<span class="c-tag">&lt;/a&gt;</span></p>
+              <p style="--i:3"><span class="c-tag">&lt;/header&gt;</span></p>
+              <p style="--i:4" class="c-gap"><span class="c-kw">const</span> app = <span class="c-fn">build</span>(idea);</p>
+              <p style="--i:5"><span class="c-fn">app</span>.<span class="c-fn">launch</span>();<span class="code-cursor"></span></p>
             </div>
           </div>
-          <div class="floating-label label-top"><span class="label-icon">✳</span><span><b>Responsive by design</b><small>Made for every screen</small></span></div>
-          <div class="floating-label label-bottom"><span class="label-icon label-green">↗</span><span><b>Built with purpose</b><small>Clear, useful, modern</small></span></div>
+          <div class="art-card dash-card" aria-hidden="true">
+            <div class="art-bar"><span class="art-dots"><i></i><i></i><i></i></span><span class="art-tab">Dashboard</span></div>
+            <div class="dash-body">
+              <div class="dash-bars"><i style="--h:42%"></i><i style="--h:64%"></i><i style="--h:50%"></i><i style="--h:78%"></i><i style="--h:58%"></i><i style="--h:92%"></i><i style="--h:70%"></i></div>
+              <svg class="dash-line" viewBox="0 0 120 40" preserveAspectRatio="none"><polyline points="0,32 18,26 36,29 56,16 78,20 100,8 120,12" /></svg>
+              <div class="dash-rows"><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="art-card video-card" aria-hidden="true">
+            <div class="art-bar"><span class="art-dots"><i></i><i></i><i></i></span><span class="art-tab">Timeline</span></div>
+            <div class="video-body">
+              <div class="video-track"><i style="--w:34%"></i><i style="--w:22%"></i><i style="--w:28%"></i></div>
+              <div class="video-track t2"><i style="--w:18%"></i><i style="--w:40%"></i><i style="--w:24%"></i></div>
+              <div class="video-track t3"><i style="--w:52%"></i><i style="--w:30%"></i></div>
+              <span class="playhead"></span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-bottom container"><span>WEB DESIGN & DEVELOPMENT</span><span class="hero-bottom-line"></span><span>BUSINESS · PORTFOLIO · LANDING PAGES</span></div>
+
+      <!-- Secondary brand statement. -->
+      <div class="hero-band container">
+        <p>Technology, Creativity &amp; Solutions That Move Your Business Forward.</p>
+        <ul aria-label="Our services">
+          <li>Web Development</li><li>Custom Software</li><li>Digital Transformation</li><li>Video Editing</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Services: concise offerings, laid out in a responsive grid. -->
-    <section class="services section-light" id="services">
+    <!-- About: who WEBBROS is and how we work. No company history, team size or statistics are claimed. -->
+    <section class="about section-light" id="about">
+      <div class="container about-layout">
+        <div class="about-intro reveal">
+          <p class="eyebrow">About WEBBROS</p>
+          <h2>More Than Digital Services. We’re Your Technology Partner.</h2>
+          <p>WEBBROS is a digital solutions brand. We combine web development, custom software, digital transformation and video editing, so your business can work with one team on its digital presence instead of coordinating several.</p>
+        </div>
+        <dl class="about-list">
+          <div class="about-item reveal"><dt>Who we are</dt><dd>A technology and creative team focused on practical digital work for businesses, from a first website to custom tools that support daily operations.</dd></div>
+          <div class="about-item reveal"><dt>Problems we solve</dt><dd>Outdated websites, scattered tools and manual processes slow a business down. We replace them with clear, reliable digital systems that fit how you actually work.</dd></div>
+          <div class="about-item reveal"><dt>How we help</dt><dd>We start by listening. Then we design, build and test the website, software or video content your business needs, and keep you informed at every stage.</dd></div>
+          <div class="about-item reveal"><dt>Our approach</dt><dd>Quality comes from the details: clean code, thoughtful design, careful testing and honest communication from the first conversation to launch.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Services: four categories with a CTA that preselects the enquiry form. -->
+    <section class="services section-dark" id="services">
       <div class="container">
         <div class="section-heading reveal">
-          <div><p class="eyebrow eyebrow-light">HOW I CAN HELP</p><h2>Good websites do<br><span class="muted-heading">more than look good.</span></h2></div>
-          <p class="section-intro">I combine thoughtful presentation with practical functionality to help businesses make a strong first impression online.</p>
+          <div><p class="eyebrow">Services</p><h2>Four services. One technology partner.</h2></div>
+          <p class="section-intro">Choose a single service or combine them. Every project is planned around your business requirements.</p>
         </div>
+
         <div class="service-grid">
-          <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon">↗</div><h3>Business websites</h3><p>Professional websites for local businesses, gyms, cafés, shops, and service providers.</p><span class="service-foot">CLEAR · TRUSTWORTHY · USEFUL</span></article>
-          <article class="service-card reveal"><span class="service-number">02</span><div class="service-icon">▤</div><h3>Landing pages</h3><p>Focused pages that introduce your service, explain your offer, and guide visitors to act.</p><span class="service-foot">FOCUSED · FAST · RESPONSIVE</span></article>
-          <article class="service-card reveal"><span class="service-number">03</span><div class="service-icon">⌘</div><h3>Portfolio websites</h3><p>Personal websites that present your work, experience, and skills in a polished way.</p><span class="service-foot">PERSONAL · MODERN · DISTINCT</span></article>
-          <article class="service-card reveal"><span class="service-number">04</span><div class="service-icon">⤴</div><h3>Redesign & launch</h3><p>Improve an existing website’s presentation, responsiveness, and online availability.</p><span class="service-foot">REFINE · TEST · DEPLOY</span></article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="26" height="20" rx="2.5"/><path d="M3 10.5h26"/><path d="M7 7.8h.01M10.5 7.8h.01"/><path d="M13 29h6M16 25v4"/><path d="M10 16.5l-2 2 2 2M22 16.5l2 2-2 2M17.5 15.5l-3 6"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Modern, responsive and professional websites designed to strengthen your online presence and connect you with your customers.</p>
+            <ul class="service-list">
+              <li>Business websites</li><li>Portfolio websites</li><li>Landing pages</li><li>Website redesign</li><li>Responsive website development</li>
+            </ul>
+            <a class="service-cta" href="#contact" data-service="Web Development">Discuss a website <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l11 6.3v12.4L16 28 5 21.7V9.3L16 3z"/><path d="M5 9.3l11 6.4 11-6.4M16 15.7V28"/></svg>
+            </div>
+            <h3>Custom Software Solutions</h3>
+            <p>Practical software solutions designed around your business requirements, helping simplify operations and improve productivity.</p>
+            <ul class="service-list">
+              <li>Business management tools</li><li>Internal dashboards</li><li>Workflow automation</li><li>Custom web applications</li><li>Database-driven applications</li><li>System integrations</li>
+            </ul>
+            <a class="service-cta" href="#contact" data-service="Custom Software Solutions">Discuss software <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M26 12a10.5 10.5 0 00-19.2-3.2M6 20a10.5 10.5 0 0019.2 3.2"/><path d="M6.8 3.5v5.3h5.3M25.2 28.5v-5.3h-5.3"/><circle cx="16" cy="16" r="3"/></svg>
+            </div>
+            <h3>Digital Transformation</h3>
+            <p>Helping businesses improve their digital workflows through technology, modern tools and smarter processes.</p>
+            <ul class="service-list">
+              <li>Digital workflow improvement</li><li>Modern tools and technology guidance</li><li>Process simplification</li>
+            </ul>
+            <a class="service-cta" href="#contact" data-service="Digital Transformation">Discuss your workflow <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="26" height="20" rx="2.5"/><path d="M13 12l7 4-7 4v-8z"/></svg>
+            </div>
+            <h3>Video Editing</h3>
+            <p>Creative and engaging video editing for businesses, brands and digital platforms.</p>
+            <ul class="service-list">
+              <li>Social media videos</li><li>Instagram Reels</li><li>YouTube editing</li><li>Promotional videos for businesses</li>
+            </ul>
+            <a class="service-cta" href="#contact" data-service="Video Editing">Discuss a video <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects: real client websites appear in compact browser mockups. -->
-    <section class="projects section-light" id="projects">
+    <!-- Our Work: existing live projects with interactive mobile previews. -->
+    <section class="work section-light section-tint" id="work">
       <div class="container">
-        <div class="section-heading projects-heading reveal">
-          <div><p class="eyebrow eyebrow-light">SELECTED WORK</p><h2>Built for real<br><span class="muted-heading">businesses.</span></h2></div>
-          <p class="section-intro">Explore two websites I’ve worked on. The compact previews keep the page balanced, with direct links to each full website.</p>
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Our Work</p><h2>Selected Projects</h2></div>
+          <p class="section-intro">Two live websites from our work. Explore each in the mobile preview, or open the full website in a new tab.</p>
         </div>
 
-        <!-- Project one: the iframe is intentionally compact; the external link remains available if embedding is blocked. -->
-        <article class="project-card reveal">
-          <div class="project-meta"><span class="project-index">01 / BUSINESS WEBSITE</span><span class="project-status"><i></i> LIVE WEBSITE</span></div>
-          <div class="browser-frame">
-            <div class="browser-top"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-address"><span>↗</span> centuryfitnessindia.com</div><a href="https://centuryfitnessindia.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Century Fitness India in a new tab">↗</a></div>
-            <div class="device-stage">
-              <div class="device-caption"><span class="device-live-dot"></span> LIVE MOBILE EXPERIENCE <span class="device-caption-note">Interact with the site below</span></div>
-              <div class="phone-device" aria-label="Interactive phone preview of Century Fitness India">
-                <div class="phone-side-button phone-side-left"></div><div class="phone-side-button phone-side-right"></div>
-                <div class="phone-bezel">
-                  <div class="phone-island" aria-hidden="true"></div>
-                  <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ▮ ▰</span></div>
-                  <div class="phone-screen">
-                    <iframe src="https://centuryfitnessindia.com/" title="Interactive mobile preview of Century Fitness India" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    <div class="preview-fallback"><span>LIVE PROJECT PREVIEW</span><b>Century Fitness India</b><p>This website may block embedded previews. Open the full website to explore it.</p><a class="button button-dark" href="https://centuryfitnessindia.com/" target="_blank" rel="noopener noreferrer">Open live website ↗</a></div>
+        <div class="project-grid">
+          <!-- Project one -->
+          <article class="project-card reveal">
+            <div class="project-meta"><span class="project-index">Business website</span><span class="project-status"><i></i> Live website</span></div>
+            <div class="browser-frame">
+              <div class="browser-top"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-address"><span aria-hidden="true">↗</span> centuryfitnessindia.com</div><a href="https://centuryfitnessindia.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Century Fitness India in a new tab">↗</a></div>
+              <div class="device-stage">
+                <div class="device-caption"><span class="device-live-dot"></span> Live mobile preview</div>
+                <div class="phone-device" aria-label="Interactive phone preview of Century Fitness India">
+                  <div class="phone-side-button phone-side-left"></div><div class="phone-side-button phone-side-right"></div>
+                  <div class="phone-bezel">
+                    <div class="phone-island" aria-hidden="true"></div>
+                    <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ▮ ▰</span></div>
+                    <div class="phone-screen">
+                      <iframe src="https://centuryfitnessindia.com/" title="Interactive mobile preview of Century Fitness India" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                      <div class="preview-fallback"><span>Live project preview</span><b>Century Fitness India</b><p>This website may block embedded previews. Open the full website to explore it.</p><a class="button button-primary" href="https://centuryfitnessindia.com/" target="_blank" rel="noopener noreferrer">Open live website ↗</a></div>
+                    </div>
+                    <div class="phone-home-bar" aria-hidden="true"></div>
                   </div>
-                  <div class="phone-home-bar" aria-hidden="true"></div>
                 </div>
+                <p class="device-help">Scroll and tap inside the phone to explore the live website.</p>
               </div>
-              <p class="device-help">Scroll and tap inside the phone preview to explore the live website. If embedding is blocked, use “View live website”.</p>
             </div>
-          </div>
-          <div class="project-details">
-            <div><h3>Century Fitness India</h3><p>A fitness business website built to present the gym online and help visitors discover the business.</p></div>
-            <div class="project-tags"><span>Business website</span><span>Fitness</span><span>Responsive design</span></div>
-            <a class="project-link" href="https://centuryfitnessindia.com/" target="_blank" rel="noopener noreferrer">View live website <span>↗</span></a>
-          </div>
-        </article>
+            <div class="project-details">
+              <div><h3>Century Fitness India</h3><p>A fitness business website built to present the gym online and help visitors discover the business.</p></div>
+              <div class="project-tags"><span>Business website</span><span>Fitness</span><span>Responsive design</span></div>
+              <a class="project-link" href="https://centuryfitnessindia.com/" target="_blank" rel="noopener noreferrer">View Live Website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
 
-        <!-- Project two: same component pattern keeps the project list consistent. -->
-        <article class="project-card project-card-second reveal">
-          <div class="project-meta"><span class="project-index">02 / CAFÉ WEBSITE</span><span class="project-status"><i></i> LIVE WEBSITE</span></div>
-          <div class="browser-frame">
-            <div class="browser-top"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-address"><span>↗</span> s-darbar-cafe.pages.dev</div><a href="https://s-darbar-cafe.pages.dev/#new-menu" target="_blank" rel="noopener noreferrer" aria-label="Open Darbar Cafe in a new tab">↗</a></div>
-            <div class="device-stage">
-              <div class="device-caption"><span class="device-live-dot"></span> LIVE MOBILE EXPERIENCE <span class="device-caption-note">Interact with the site below</span></div>
-              <div class="phone-device" aria-label="Interactive phone preview of Darbar Cafe">
-                <div class="phone-side-button phone-side-left"></div><div class="phone-side-button phone-side-right"></div>
-                <div class="phone-bezel">
-                  <div class="phone-island" aria-hidden="true"></div>
-                  <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ▮ ▰</span></div>
-                  <div class="phone-screen">
-                    <iframe src="https://s-darbar-cafe.pages.dev/#new-menu" title="Interactive mobile preview of Darbar Cafe" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    <div class="preview-fallback"><span>LIVE PROJECT PREVIEW</span><b>Darbar Cafe</b><p>This website may block embedded previews. Open the full website to explore it.</p><a class="button button-dark" href="https://s-darbar-cafe.pages.dev/#new-menu" target="_blank" rel="noopener noreferrer">Open live website ↗</a></div>
+          <!-- Project two -->
+          <article class="project-card reveal">
+            <div class="project-meta"><span class="project-index">Café website</span><span class="project-status"><i></i> Live website</span></div>
+            <div class="browser-frame">
+              <div class="browser-top"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-address"><span aria-hidden="true">↗</span> s-darbar-cafe.pages.dev</div><a href="https://s-darbar-cafe.pages.dev/#new-menu" target="_blank" rel="noopener noreferrer" aria-label="Open Darbar Cafe in a new tab">↗</a></div>
+              <div class="device-stage">
+                <div class="device-caption"><span class="device-live-dot"></span> Live mobile preview</div>
+                <div class="phone-device" aria-label="Interactive phone preview of Darbar Cafe">
+                  <div class="phone-side-button phone-side-left"></div><div class="phone-side-button phone-side-right"></div>
+                  <div class="phone-bezel">
+                    <div class="phone-island" aria-hidden="true"></div>
+                    <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ▮ ▰</span></div>
+                    <div class="phone-screen">
+                      <iframe src="https://s-darbar-cafe.pages.dev/#new-menu" title="Interactive mobile preview of Darbar Cafe" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                      <div class="preview-fallback"><span>Live project preview</span><b>Darbar Cafe</b><p>This website may block embedded previews. Open the full website to explore it.</p><a class="button button-primary" href="https://s-darbar-cafe.pages.dev/#new-menu" target="_blank" rel="noopener noreferrer">Open live website ↗</a></div>
+                    </div>
+                    <div class="phone-home-bar" aria-hidden="true"></div>
                   </div>
-                  <div class="phone-home-bar" aria-hidden="true"></div>
                 </div>
+                <p class="device-help">Scroll and tap inside the phone to explore the live website.</p>
               </div>
-              <p class="device-help">Scroll and tap inside the phone preview to explore the live website. If embedding is blocked, use “View live website”.</p>
             </div>
-          </div>
-          <div class="project-details">
-            <div><h3>Darbar Cafe</h3><p>A café website focused on presenting the menu and helping customers explore the business online.</p></div>
-            <div class="project-tags"><span>Café website</span><span>Menu</span><span>Business presence</span></div>
-            <a class="project-link" href="https://s-darbar-cafe.pages.dev/#new-menu" target="_blank" rel="noopener noreferrer">View live website <span>↗</span></a>
-          </div>
-        </article>
-        <p class="preview-note"><span>ⓘ</span> Some websites prevent embedded previews. Use the live website button if a preview is blocked.</p>
+            <div class="project-details">
+              <div><h3>Darbar Cafe</h3><p>A café website focused on presenting the menu and helping customers explore the business online.</p></div>
+              <div class="project-tags"><span>Café website</span><span>Menu</span><span>Business presence</span></div>
+              <a class="project-link" href="https://s-darbar-cafe.pages.dev/#new-menu" target="_blank" rel="noopener noreferrer">View Live Website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="preview-note"><span aria-hidden="true">ⓘ</span> Some websites prevent embedded previews. Use the View Live Website button if a preview is blocked.</p>
       </div>
     </section>
 
-    <!-- Process: explains how a project moves from initial discussion to launch. -->
-    <section class="process dark-section" id="about">
-      <div class="container process-layout">
-        <div class="process-intro reveal"><p class="eyebrow">A SIMPLE PROCESS</p><h2>From idea<br>to <span class="accent-text">online.</span></h2><p>I focus on the essentials: understand the business, create a clear experience, test it, and get it ready for visitors.</p><a class="text-link light-link" href="#contact">Have a project in mind? <span>↗</span></a></div>
-        <div class="process-list">
-          <article class="process-item reveal"><span>01</span><div><h3>Understand</h3><p>Talk through your goals, audience, content, and must-have features.</p></div><span class="process-arrow">↗</span></article>
-          <article class="process-item reveal"><span>02</span><div><h3>Design</h3><p>Plan a clean layout and visual direction that fits your business.</p></div><span class="process-arrow">↗</span></article>
-          <article class="process-item reveal"><span>03</span><div><h3>Develop</h3><p>Build the pages and make sure they work across screen sizes.</p></div><span class="process-arrow">↗</span></article>
-          <article class="process-item reveal"><span>04</span><div><h3>Launch</h3><p>Test the website and publish it with the required configuration.</p></div><span class="process-arrow">↗</span></article>
+    <!-- Our Process: a real four-step sequence, shown as a timeline. -->
+    <section class="process section-dark section-deep" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Our Process</p><h2>A clear path from idea to launch.</h2></div>
+          <p class="section-intro">Every project follows the same four stages, so you always know what is happening and what comes next.</p>
         </div>
+        <ol class="timeline reveal">
+          <li class="timeline-step"><span class="step-node" aria-hidden="true">01</span><h3>Discover</h3><p>Understand the client’s requirements and goals.</p></li>
+          <li class="timeline-step"><span class="step-node" aria-hidden="true">02</span><h3>Plan &amp; Design</h3><p>Prepare the structure and visual direction.</p></li>
+          <li class="timeline-step"><span class="step-node" aria-hidden="true">03</span><h3>Develop</h3><p>Build and test the solution.</p></li>
+          <li class="timeline-step"><span class="step-node" aria-hidden="true">04</span><h3>Deliver</h3><p>Launch the project and provide agreed support.</p></li>
+        </ol>
       </div>
     </section>
 
-    <!-- Contact: direct contact details plus a WhatsApp project brief form. -->
-    <section class="contact section-light" id="contact">
+    <!-- Contact: direct contact routes plus a WhatsApp project enquiry form. -->
+    <section class="contact section-light section-tint" id="contact">
       <div class="container">
         <div class="contact-heading reveal">
-          <p class="eyebrow eyebrow-light">CONTACT</p>
-          <h2>Have a Website Idea? <span class="accent-text-dark">Let’s Build It.</span></h2>
-          <p>Tell me about your business and what you need. The quickest way to reach me is WhatsApp, or email me directly.</p>
+          <p class="eyebrow">Contact</p>
+          <h2>Have an Idea? Let’s Build Something Great.</h2>
+          <p>Tell us about your project. Our team is ready to discuss your requirements and help you find the right digital solution.</p>
         </div>
 
         <div class="contact-layout">
           <!-- Contact methods remain visible and usable without JavaScript. -->
           <aside class="contact-details reveal" aria-label="Contact details">
-            <h3>Contact list</h3>
-            <a class="contact-row" href="https://wa.me/918095406516?text=Hi%20Chethan%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">
-              <span class="contact-icon">◉</span><span class="contact-row-copy"><strong>WhatsApp</strong><small>+91 80954 06516</small></span><span class="contact-row-arrow">↗</span>
+            <h3>Talk to us directly</h3>
+            <a class="contact-row contact-whatsapp" href="https://wa.me/918095406516?text=Hello%20WEBBROS%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4.1-1.1l-4.4 1.1z"/><path d="M9 8.8c.3 2.6 2.7 5 5.6 5.7.6.1 1.5-.6 1.5-1.2l-1.7-.9-.9.8c-1.3-.5-2.4-1.6-2.9-2.9l.8-.9-.9-1.7c-.6 0-1.6.6-1.5 1.1z"/></svg></span>
+              <span class="contact-row-copy"><strong>WhatsApp</strong><small>+91 80954 06516</small></span><span class="contact-row-arrow" aria-hidden="true">↗</span>
             </a>
             <a class="contact-row" href="tel:+918095406516">
-              <span class="contact-icon">⌕</span><span class="contact-row-copy"><strong>Call</strong><small>+91 80954 06516</small></span><span class="contact-row-arrow">↗</span>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+              <span class="contact-row-copy"><strong>Call</strong><small>+91 80954 06516</small></span><span class="contact-row-arrow" aria-hidden="true">↗</span>
             </a>
-            <a class="contact-row" href="mailto:chethansgowda809@gmail.com">
-              <span class="contact-icon">✉</span><span class="contact-row-copy"><strong>Email</strong><small>chethansgowda809@gmail.com</small></span><span class="contact-row-arrow">↗</span>
+            <a class="contact-row" href="tel:+918861898538">
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+              <span class="contact-row-copy"><strong>Call</strong><small>+91 88618 98538</small></span><span class="contact-row-arrow" aria-hidden="true">↗</span>
             </a>
-            <a class="contact-row" href="https://www.instagram.com/chethan_gxwda_/" target="_blank" rel="noopener noreferrer">
-              <span class="contact-icon">◎</span><span class="contact-row-copy"><strong>Instagram</strong><small>@chethan_gxwda_</small></span><span class="contact-row-arrow">↗</span>
+            <a class="contact-row" href="mailto:team.webbros@gmail.com">
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg></span>
+              <span class="contact-row-copy"><strong>Email</strong><small>team.webbros@gmail.com</small></span><span class="contact-row-arrow" aria-hidden="true">↗</span>
             </a>
-            <a class="contact-row" href="https://github.com/csgoowda" target="_blank" rel="noopener noreferrer">
-              <span class="contact-icon">⌘</span><span class="contact-row-copy"><strong>GitHub</strong><small>csgoowda</small></span><span class="contact-row-arrow">↗</span>
-            </a>
-            <p class="contact-side-note"><span class="status-dot"></span> Available to discuss website projects</p>
+            <div class="contact-brief"><h4>Helpful to include in your message</h4><ul><li>What you would like built or created</li><li>Your preferred timeline, if you have one</li><li>Links to websites or examples you like</li></ul></div>
+            <p class="contact-side-note">Website: webbros-portfolio.pages.dev</p>
           </aside>
 
           <!-- This form builds a prefilled WhatsApp message; it does not send data to a server. -->
-          <form class="brief-form reveal" id="project-form">
-            <div class="form-heading"><div><p class="eyebrow eyebrow-light">LET’S GET STARTED</p><h3>Send a project brief</h3></div><span class="form-step">01 — 03</span></div>
-            <p class="form-intro">Fill in a few details. WhatsApp will open with your message ready to send.</p>
+          <form class="brief-form reveal" id="project-form" novalidate>
+            <div class="form-heading"><h3>Send a project enquiry</h3></div>
+            <p class="form-intro">Share a few details. WhatsApp will open with your message ready to send.</p>
             <div class="form-field">
               <label for="client-name">Your name <span aria-hidden="true">*</span></label>
               <input id="client-name" name="name" type="text" placeholder="Enter your name" autocomplete="name" required maxlength="100">
             </div>
             <div class="form-field">
-              <label for="project-type">What do you need? <span aria-hidden="true">*</span></label>
+              <label for="project-type">Service needed <span aria-hidden="true">*</span></label>
               <select id="project-type" name="projectType" required>
-                <option value="" disabled selected>Select a project type</option>
-                <option>Business website</option>
-                <option>Landing page</option>
-                <option>Portfolio website</option>
-                <option>Website redesign or improvements</option>
-                <option>Something else</option>
+                <option value="" disabled selected>Select a service</option>
+                <option>Web Development</option>
+                <option>Custom Software Solutions</option>
+                <option>Digital Transformation</option>
+                <option>Video Editing</option>
+                <option>More than one service</option>
+                <option>Not sure yet</option>
               </select>
             </div>
             <div class="form-field">
-              <label for="project-details">About your project <span aria-hidden="true">*</span></label>
-              <textarea id="project-details" name="details" rows="4" placeholder="What does your business do, and what would you like the website to achieve?" required maxlength="2000"></textarea>
+              <label for="client-contact">Phone or email <span class="optional">(optional)</span></label>
+              <input id="client-contact" name="contact" type="text" placeholder="How can we reach you?" autocomplete="off" maxlength="120">
             </div>
-            <button class="button button-accent form-submit" type="submit">Send via WhatsApp <span aria-hidden="true">↗</span></button>
-            <p class="form-privacy">Your details are used to prepare the WhatsApp message. Nothing is submitted to this website.</p>
-            <p class="form-error" id="form-error" role="alert" hidden>Please complete all fields before continuing.</p>
+            <div class="form-field">
+              <label for="project-details">Project requirements <span aria-hidden="true">*</span></label>
+              <textarea id="project-details" name="details" rows="4" placeholder="What does your business do, and what would you like us to build or create?" required maxlength="2000"></textarea>
+            </div>
+            <button class="button button-primary form-submit" type="submit">Send via WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="form-privacy">Your details are used only to prepare the WhatsApp message. Nothing is submitted to this website.</p>
+            <p class="form-error" id="form-error" role="alert" hidden>Please complete all required fields before continuing.</p>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer repeats the key contact route and keeps the end of the page uncluttered. -->
+  <!-- Footer: brand, navigation, services and contact details. -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="brand footer-brand" href="#home"><span class="brand-mark">C</span><span>chethan<span class="brand-muted">.dev</span></span></a>
-      <p>Website development for growing businesses.</p>
-      <a href="mailto:chethansgowda809@gmail.com" class="footer-email">Email me ↗</a>
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a class="brand" href="#home" aria-label="WEBBROS Digital Solutions — back to top">
+          <img class="brand-logo" src="assets/webbros-logo-nav.png" width="640" height="189" alt="">
+          <span class="brand-text"><b>WEBBROS</b><small>DIGITAL SOLUTIONS</small></span>
+        </a>
+        <p>Web development, custom software solutions, digital transformation and video editing for businesses.</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h2>Navigate</h2>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#process">Our Process</a><a href="#contact">Contact</a>
+      </nav>
+      <nav class="footer-col" aria-label="Footer services">
+        <h2>Services</h2>
+        <a href="#services">Web Development</a><a href="#services">Custom Software Solutions</a><a href="#services">Digital Transformation</a><a href="#services">Video Editing</a>
+      </nav>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <a href="tel:+918095406516">+91 80954 06516</a>
+        <a href="tel:+918861898538">+91 88618 98538</a>
+        <a href="mailto:team.webbros@gmail.com">team.webbros@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="copyright">© <span id="year">2026</span> WEBBROS — Digital Solutions. All rights reserved.</span>
       <a href="#home" class="back-top">Back to top ↑</a>
-      <span class="copyright">© <span id="year"></span> Chethan Gowda</span>
     </div>
   </footer>
 
