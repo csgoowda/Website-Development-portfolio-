@@ -1,100 +1,76 @@
-# Chethan Gowda — Website Development Services
+# WEBBROS — Digital Solutions
 
-A service-based website development portfolio for **Chethan Gowda**, a website developer based in Mysuru, India. The site presents website services, selected client work, the development process, and contact options for businesses that need a professional online presence.
+Static website for **WEBBROS — Digital Solutions**, a digital solutions brand offering web development, custom software solutions, digital transformation and video editing.
 
-## What this website is for
-
-This website is designed to help potential clients:
-
-- Understand the website services offered.
-- View live examples of business and café websites.
-- Learn how a project moves from the first discussion to launch.
-- Send a project brief through WhatsApp.
-- Contact Chethan by WhatsApp, phone, email, Instagram, or GitHub.
-
-## Services featured
-
-- **Business websites** — professional websites for local businesses, gyms, cafés, and other organizations.
-- **Landing pages** — focused pages for promoting a service, product, event, or campaign.
-- **Portfolio websites** — personal and professional websites for presenting work and experience.
-- **Website redesign and launch** — improvements to an existing website and help publishing it online.
-
-## How a client uses the website
-
-1. Browse the services and selected work.
-2. Review the live project previews or open the full project websites.
-3. Read the four-step process: understand, design, develop, and launch.
-4. Open the **Contact** section.
-5. Complete the project brief with a name, project type, and project description.
-6. Select **Send via WhatsApp** to open a prefilled WhatsApp message.
-
-The contact form does not submit data to a backend or store information on this website. It prepares a message in the visitor’s browser and opens WhatsApp so the visitor can choose whether to send it.
+Built with HTML5, CSS3 and vanilla JavaScript. No framework, build step or backend. Compatible with GitHub Pages and any static host.
 
 ## Project structure
 
 ```text
 .
-├── index.html   # Main service website markup and content
-├── style.css    # Responsive layout, visual design, and accessibility styles
-├── script.js    # Navigation, scroll effects, reveal animations, and WhatsApp form handling
-└── README.md    # Project and service usage information
+├── index.html                  # Page markup and content
+├── style.css                   # Design system and responsive styles
+├── script.js                   # Navigation, scroll effects, reveal animations, WhatsApp form
+├── favicon.ico
+├── assets/
+│   ├── webbros-logo.png        # Original logo (master file, unchanged)
+│   ├── webbros-logo-nav.png    # Lightweight copy of the same logo used in the page
+│   ├── favicon-32.png / favicon-48.png / favicon-512.png
+│   └── apple-touch-icon.png
+└── README.md
 ```
 
-## Run the website locally
+## Brand colours
 
-No package installation, build tool, or backend server is required.
+All colours are defined once, as CSS variables at the top of `style.css`:
 
-### Option 1: Open directly
+| Token | Value | Use |
+|---|---|---|
+| `--brand-navy` | `#01133D` | Primary backgrounds, navigation |
+| `--brand-deep` | `#000B2B` | Hero, process and footer backgrounds |
+| `--brand-cyan` | `#00E9FB` | Buttons, highlights, icons, interactive states |
+| `--brand-white` | `#FFFFFF` | Text on navy, clean content sections |
+| `--brand-blue` | `#168FD0` | Supporting accents, focus rings, depth |
 
-1. Download or clone this repository.
-2. Open the project folder.
-3. Double-click `index.html`, or open it in a modern web browser.
+The logo contains white lettering, so it is only placed on navy backgrounds.
 
-### Option 2: Use VS Code Live Server
+## Sections
 
-1. Open the project folder in VS Code.
-2. Install the **Live Server** extension if it is not already installed.
-3. Right-click `index.html`.
-4. Select **Open with Live Server**.
+Home · About · Services · Our Work (Selected Projects) · Our Process · Contact · Footer
 
-Using a local server is recommended when testing external project previews and browser behavior.
+## Enquiry form
 
-## External services and content
+The form builds a pre-filled WhatsApp message in the visitor's browser and opens WhatsApp. Nothing is sent to a server. The destination is the primary number, set as `whatsappNumber` in `script.js`.
 
-The website uses the following external resources:
+## Contact details used
 
-- Google Fonts for the DM Sans and Manrope typefaces.
-- WhatsApp for project enquiries submitted through the contact form.
-- External live project websites displayed in the project previews.
-- Email, telephone, Instagram, and GitHub links in the contact section.
+- Phone / WhatsApp: +91 80954 06516 (primary WhatsApp number)
+- Phone: +91 88618 98538
+- Email: team.webbros@gmail.com
+- Website reference (shown as text only): webbros-portfolio.pages.dev
 
-A live project may prevent iframe embedding because of its security settings. If that happens, visitors should use the **View live website** link shown on the project card.
+## Pending: production domain
 
-## Deploy the website
+`og:url`, the canonical link and any `og:image` are intentionally **not set**. Once the official domain is confirmed, add to `<head>` in `index.html`:
 
-This is a static website and can be deployed to any static hosting provider, including GitHub Pages, Netlify, Vercel, Cloudflare Pages, or traditional web hosting.
+```html
+<link rel="canonical" href="https://YOUR-DOMAIN/">
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<meta property="og:image" content="https://YOUR-DOMAIN/assets/og-image.png">
+```
 
-1. Upload `index.html`, `style.css`, and `script.js` to the hosting provider.
-2. Configure the site’s domain if required.
-3. Confirm that the deployed site loads over HTTPS.
-4. Test the navigation, contact links, WhatsApp form, and live project links.
-5. Confirm that the external website previews work, or that their fallback links are available.
+## External resources
 
-There is no build command and no environment-variable configuration required for the current version.
+- Google Fonts (Manrope and DM Sans), with system-font fallbacks.
+- WhatsApp (`wa.me`) for enquiries.
+- The two live project websites shown in the preview phones. Some sites block embedding; each card has a "View Live Website" button.
 
-## Updating the service website
+## Run locally
 
-- Edit the content and contact links in `index.html`.
-- Update colors, spacing, responsive behavior, and component styles in `style.css`.
-- Update navigation, reveal animations, scroll progress, or WhatsApp behavior in `script.js`.
-- Keep the phone number, email address, social links, and project URLs consistent across the page.
-- After making changes, test the website on both desktop and mobile screen sizes.
+Open `index.html` in a browser, or use VS Code Live Server (recommended when testing external previews).
 
-## Contact
+## Updating content
 
-For a new website, landing page, portfolio, redesign, or launch project, use the contact form on the website or contact:
-
-- WhatsApp: **+91 80954 06516**
-- Email: **chethansgowda809@gmail.com**
-- Instagram: **[@chethan_gxwda_](https://www.instagram.com/chethan_gxwda_/)**
-- GitHub: **[csgoowda](https://github.com/csgoowda)**
+- Text and links: `index.html`
+- Colours, spacing and layout: `style.css`
+- Behaviour and the WhatsApp number: `script.js`
