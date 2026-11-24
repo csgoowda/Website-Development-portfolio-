@@ -22,7 +22,7 @@ Built with HTML5, CSS3 and vanilla JavaScript. No framework, build step or backe
 
 ## Brand colours
 
-All colours are defined once, as CSS variables at the top of `style.css`:
+All colours are defined once, as CSS variables at the top of `style.css`: 
 
 | Token | Value | Use |
 |---|---|---|
